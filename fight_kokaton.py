@@ -178,7 +178,7 @@ def main():
             if beam is not None:
                 if beam.rct.colliderect(bomb.rct):  #ビームと爆弾が衝突していたら
                     beam = None
-                    bomb[i] = None
+                    boms[i] = None
                     bird.change_img(6, screen)
         boms = [bomb for bomb in boms if bomb is not None]
         key_lst = pg.key.get_pressed()
