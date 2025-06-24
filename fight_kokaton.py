@@ -156,6 +156,10 @@ class Bomb:
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
+class Explosion:
+    """
+    爆弾エフェクトによるクラス
+    """
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
@@ -210,6 +214,7 @@ def main():
         pg.display.update()
         tmr += 1
         clock.tick(50)
+    
 
 
 if __name__ == "__main__":
