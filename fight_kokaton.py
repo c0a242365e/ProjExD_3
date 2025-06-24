@@ -30,6 +30,10 @@ class Score:
     スコアに関するクラス
     """
     def __init__(self):
+        """
+        引数：なし
+        戻り値：なし
+        """
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
         self.color = (0,0,255)
         self.score = 0
